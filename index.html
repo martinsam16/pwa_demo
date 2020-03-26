@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            PWA APP
+        </title>
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script src="script/main.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                        console.log('ServiceWorker registrado en el scope: ', registration.scope);
+                    }, function (err) {
+                        console.log('Error en ServiceWorker: ', err);
+                    });
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>PWA y la web que se puede instalar</h1>
+        <button onclick="cambiarBG('blueviolet')"> Morado :D</button>
+        <button onclick="cambiarBG('white')"> Blanco :D</button>
+        <button onclick="cambiarBG('red')"> Rojo :D</button>
+    </body>
+</html>

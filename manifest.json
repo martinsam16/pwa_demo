@@ -1,0 +1,32 @@
+{
+    "short_name": "PWA APP",
+    "name": "PWA APP",
+    "description": "PWA Y la web que se puede instalar",
+    "icons": [
+      {
+        "src": "/images/icono-64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      },
+      {
+        "src": "/images/icono-128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "/images/icono-256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "/images/icono-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#2254AF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#2254AF"
+  }
